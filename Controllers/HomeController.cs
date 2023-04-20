@@ -18,7 +18,7 @@ namespace Auth.Controllers
         {
             return View();
         }
-
+        //Authorizing only admin to access the privacy page
         [Authorize(Roles ="Admin")]
         public IActionResult Privacy()
         {
